@@ -36,6 +36,9 @@ for box in product_boxes:
         a_tag = img_tag.parent
         # Extract the aria-label attribute
         aria_label = a_tag['aria-label'] if 'aria-label' in a_tag.attrs else 'No Aria Label Found'
+
+        # scrap text from all a elements under p element with class single-product-tags consider use find_all
+
         print("Image Source:", img_src)
         print("Aria Label:", aria_label)
         print()
